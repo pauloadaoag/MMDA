@@ -5,6 +5,8 @@ import time
 import collections
 TrafficSample = collections.namedtuple('TrafficSample', ['segment_id', 'direction', 'road_status', 'update_time', 'aa', 'alert_counts', 'ac', 'alert_text' ])
 
+#Comment
+
 ROADS = {
     1: "EDSA",
     2: "Q.AVE",
