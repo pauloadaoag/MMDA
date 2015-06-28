@@ -9,7 +9,7 @@ import MySQLdb as db
 import os
 
 config = ConfigParser.RawConfigParser()
-config_filename = os.path.join(os.getcwd(), 'config.cfg')
+config_filename = os.path.join(os.path.dirname(__file__), 'config.cfg')
 config.read(config_filename)
 
 db_host = config.get('mysql', 'host')
