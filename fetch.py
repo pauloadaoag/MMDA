@@ -6,9 +6,11 @@ import time
 import collections
 import ConfigParser
 import MySQLdb as db
+import os
 
 config = ConfigParser.RawConfigParser()
-config.read('config.cfg')
+config_filename = os.path.join(os.getcwd(), 'config.cfg')
+config.read(config_filename)
 
 db_host = config.get('mysql', 'host')
 db_user = config.get('mysql', 'uname')
